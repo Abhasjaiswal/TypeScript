@@ -42,3 +42,15 @@ let isLoggedIn: boolean = true; // This is how you can define a boolean in TypeS
 let num1 = 10; // TypeScript will infer the type as number
 
 // Typescript will infer the type of the variable based on the value assigned to it.
+
+
+// any 
+
+let Hero;
+
+function getHero() {
+  return "thor";
+}
+
+let hero = getHero();
+// when typescript cannot infer the type of the variable, it assigns the type 'any' to it.
